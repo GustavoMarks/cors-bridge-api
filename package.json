@@ -30,9 +30,14 @@
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS && exit 1"
     }
   }
 }
