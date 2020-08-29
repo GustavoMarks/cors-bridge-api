@@ -1,0 +1,43 @@
+{
+  "name": "cors-bridge-api",
+  "version": "1.0.0",
+  "description": "🌉 node rest api to adds cors headers to client side requests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoMarks/cors-bridge-api.git"
+  },
+  "keywords": [],
+  "author": "GustavoMarks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoMarks/cors-bridge-api/issues"
+  },
+  "homepage": "https://github.com/GustavoMarks/cors-bridge-api#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^10.0.0",
+    "husky": "^4.2.5",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS && exit 1"
+    }
+  }
+}
