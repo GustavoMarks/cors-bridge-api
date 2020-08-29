@@ -15,5 +15,6 @@ app.use(cors({
 }));
 
 app.get('/', controller.index);
+app.use('/get', controller.geter);
 
 module.exports = app;
